@@ -8,7 +8,7 @@ describe('auth category dependency check', () => {
         jest.clearAllMocks();
     });
 
-    it('returns true if auth category exists', () => {
+    it('returns true if auth category exists and uses Cognito service', () => {
         stateManager.getMeta = jest.fn().mockReturnValue({
             auth: {
                 myapp12345: {
